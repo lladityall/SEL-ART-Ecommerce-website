@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p>Total Price: ₹<span id="totalPrice"></span></p>
+
+    <script>
+        // Function to get query parameters
+        function getQueryParam(param) {
+            let params = new URLSearchParams(window.location.search);
+            return params.get(param);
+        }
+
+        // Get the total product price from the URL
+        const totalProductPrice = getQueryParam('total');
+
+        // Display the total product price
+        document.getElementById("totalPrice").textContent = totalProductPrice ? totalProductPrice : 0;
+    </script>
+
+</body>
+
+</html>

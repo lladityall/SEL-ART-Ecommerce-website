@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Data to JSON File</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        header {
+            background-color: #333;
+            padding: 10px;
+            color: white;
+            width: 100%;
+            text-align: center;
+        }
+        
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .logo {
+            font-weight: bold;
+            font-size: 24px;
+            display: flex;
+            align-items: center;
+        }
+        
+        .store {
+            font-weight: bold;
+            border: 1px solid white;
+            padding: 5px;
+            margin-left: 5px;
+        }
+        
+        nav {
+            display: flex;
+            align-items: center;
+        }
+        
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+        
+        nav button {
+            background-color: #555;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+        
+        .promo {
+            margin-top: 5px;
+            font-weight: normal;
+        }
+        
+        form {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+            width: 100%;
+            margin-top: 20px;
+        }
+        
+        form input[type="text"],
+        form input[type="number"],
+        form button {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        
+        form input[type="text"]:focus,
+        form input[type="number"]:focus {
+            border-color: #007bff;
+            outline: none;
+            box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+        }
+        
+        form button {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        
+        form button:hover {
+            background-color: #0056b3;
+        }
+        
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        
+        @media (max-width: 600px) {
+            form {
+                padding: 15px;
+                max-width: 100%;
+            }
+            form input[type="text"],
+            form input[type="number"],
+            form button {
+                padding: 8px;
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="promo">Free shipping, 30-day return or refund guarantee.</div>
+        <br>
+        <div class="navbar">
+
+            <div class="logo">
+                Sel
+                <div class="store">Art</div>
+            </div>
+            <nav>
+                <a href="index.html">HOME</a>
+                <a href="http://192.168.0.104:3000/">SELL</a>
+                <a href="products.html">PRODUCTS</a>
+                <a href="contact.html">CONTACT</a>
+                <button>🛒 0</button>
+            </nav>
+        </div>
+
+    </header>
+
+    <form id="dataForm">
+        <h1>Add Product</h1>
+        <input type="text" name="id" placeholder="ID" required>
+        <input type="text" name="name" placeholder="Name" required>
+        <input type="text" name="category" placeholder="Category" required>
+        <input type="text" name="brand" placeholder="Artist" required>
+        <input type="number" name="price" placeholder="Price" required>
+        <input type="number" name="stock" placeholder="Stocks" required>
+        <input type="text" name="image" placeholder="Image URL" required>
+        <input type="text" name="description" placeholder="Description" required>
+        <button type="submit">Submit</button>
+    </form>
+
+    <script>
+        document.getElementById('dataForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+
+            const formData = new FormData(this);
+            const data = Object.fromEntries(formData);
+
+            fetch('/submit', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify(data),
+                })
+                .then(response => response.text())
+                .then(result => {
+                    alert(result);
+                    this.reset();
+                })
+                .catch(error => {
+                    console.error('Error:', error);
+                });
+        });
+    </script>
+</body>
+
+</html>
