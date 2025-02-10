@@ -1,0 +1,122 @@
+[
+  {
+    "id": 1,
+    "name": "The Starry Night",
+    "category": "Brush Work",
+    "brand": "Artist - Vincent van Gogh",
+    "price": 18963,
+    "stock": 50,
+    "description": "Van Gogh's Starry Night, created in an asylum, showcases vibrant colors and swirling brushwork, reflecting his internal turmoil and influencing popular culture immensely.",
+    "image": "https://anitalouiseart.com/wp-content/uploads/2023/04/Starry-Night-1889-By-Vincent-van-Gogh.jpeg"
+  },
+  {
+    "id": 2,
+    "name": "The Night Watch",
+    "category": "Monumental Painting",
+    "brand": "Artist - Rembrandt",
+    "price": 7650,
+    "stock": 50,
+    "image": "https://anitalouiseart.com/wp-content/uploads/2023/06/The-Night-Watch-1642-By-Rembrandt-van-Rijn.webp",
+    "description": "Rembrandt's The Night Watch  exemplifies chiaroscuro and dynamic human expression, breaking from traditional military portraits to create a lively, dramatic scene that audiences."
+  },
+  {
+    "id": 3,
+    "name": "Impression, Sunrise",
+    "category": "Brush Work",
+    "brand": "Artist - Claude Monet",
+    "price": 8640,
+    "stock": 50,
+    "image": "https://anitalouiseart.com/wp-content/uploads/2023/06/Impression-Sunrise-1872-By-Claude-Monet.jpeg",
+    "description": "This painting gave birth to the Impressionist movement. Monet’s loose brushwork captures the fleeting effects of light, rendering it a cornerstone in art history."
+  },
+  {
+    "id": 4,
+    "name": "Whistler’s Mother",
+    "category": "Portait",
+    "brand": "Artist - James McNeill Whistler",
+    "price": 5999,
+    "stock": 50,
+    "image": "https://anitalouiseart.com/wp-content/uploads/2023/09/Whistlers-Mother-1536x1359.jpg?ezimgfmt=ng:webp/ngcb11",
+    "description": "Whistler’s portrait of his mother is revered for its understated emotion and compositional simplicity, adding depth to the trope of maternal portraits."
+  },
+  {
+    "id": 5,
+    "name": "Water Lilies",
+    "category": "Impressionist art",
+    "brand": "Artist - Claude Monet",
+    "price": 14999.99,
+    "stock": 50,
+    "image": "https://anitalouiseart.com/wp-content/uploads/2022/06/Water-Lilies-Series-By-Claude-Monet-1.jpeg?ezimgfmt=ng:webp/ngcb11",
+    "description": "Monet’s Water Lilies series captures the nuances of natural light, making it a celebrated part of his legacy and Impressionist art."
+  },
+  {
+    "id": 6,
+    "name": "The Storm",
+    "category": "Imaginary Painting",
+    "brand": "Artist - Rembrandt",
+    "price": 19989,
+    "stock": 50,
+    "image": "https://anitalouiseart.com/wp-content/uploads/2023/09/The-Storm-on-the-Sea-of-Galilee-1633-By-Rembrandt-1240x1536.jpg",
+    "description": "This is Rembrandt’s only seascape, and its dramatic lighting and emotion capture the storm’s chaos, making it unforgettable."
+  },
+  {
+    "id": 7,
+    "name": "Christina’s World",
+    "category": "Landscape Painting",
+    "brand": "Artist - Andrew Wyeth",
+    "price": 12980,
+    "stock": 50,
+    "image": "https://anitalouiseart.com/wp-content/uploads/2023/09/Christinas-World-1536x1037.jpg?ezimgfmt=ng:webp/ngcb11",
+    "description": "Wyeth captures a hauntingly beautiful landscape that tells a story of yearning and solitude, making it one of the most recognized paintings in American art."
+  },
+  {
+    "id": "8",
+    "name": "Guernica",
+    "category": "Expressionism",
+    "brand": "Artist - Pablo Picasso",
+    "price": "9000",
+    "stock": 50,
+    "image": "https://anitalouiseart.com/wp-content/uploads/2023/06/Guernica-By-Pablo-Picasso-1536x686.webp",
+    "description": "Picasso's Guernica powerfully responds to the Nazi bombing during the Spanish Civil War, using distorted figures and a monochromatic palette to symbolize the horrors of conflict."
+  },
+  {
+    "id": "9",
+    "name": "Girl with a Pearl Earring",
+    "category": "Portait",
+    "brand": "Artist - Johannes Vermeer",
+    "price": "7900",
+    "stock": 50,
+    "image": "https://anitalouiseart.com/wp-content/uploads/2022/06/The-Girl-With-The-Pearl-Earring.jpeg?ezimgfmt=ng:webp/ngcb11",
+    "description": "Often called the Dutch Mona Lisa, Vermeer’s painting enchants with its delicate depiction of a young woman, showcasing intricate light and mastery of 17th-century portraiture."
+  },
+  {
+    "id": "9",
+    "name": "The Persistence of Memory",
+    "category": "Landscape Painting",
+    "brand": "Artist - Salvador Dalí",
+    "price": "4000",
+    "stock": 50,
+    "image": "https://anitalouiseart.com/wp-content/uploads/2022/06/The-Persistence-of-Memory-by-Salvador-Dali.jpeg",
+    "description": "Dalí’s surrealist painting is famous for its melting clocks and barren landscape as a thought-provoking take on the fluidity and instability of time."
+  },
+  {
+    "id": "10",
+    "name": "Café Terrace at Night",
+    "category": "Portait",
+    "brand": "Artist - Vincent van Gogh",
+    "price": "8500",
+    "stock": 50,
+    "image": "https://anitalouiseart.com/wp-content/uploads/2023/01/Cafe-Terrace-at-Night-By-Vincent-Van-Gogh-1233x1536.jpeg?ezimgfmt=ng:webp/ngcb11",
+    "description": "Van Gogh’s portrayal of a café in Arles at night exemplifies his use of color and light to convey mood, contributing to its timeless allure."
+  },
+  {
+    "id": "11",
+    "name": "Hare",
+    "category": "Water Painting",
+    "brand": "Albrecht Dürer ",
+    "price": "9560",
+    "stock": "50",
+    "image": "https://1.bp.blogspot.com/-Ogfa_qrDS0c/XwLbePQBWoI/AAAAAAAAa3s/R0bKWiGZBPIhSTHLWornpP_1GCNIjNkjgCLcBGAsYHQ/s1600/00-albrecht-dc3bcrer-a-rabbit-1502.jpg",
+    "description": "It was painted using watercolor and gouache, with the white highlights done in gouache (rather than being the unpainted white of the paper)."
+  }
+]
