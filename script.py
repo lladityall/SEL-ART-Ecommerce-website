@@ -49,11 +49,11 @@ def fake_commits(start_date, end_date, min_commits, max_commits, skipping=False,
     git_push()
 
 # Set the date range
-start_date = datetime(2024, 3, 24)
-end_date = datetime(2024, 9, 18)
+start_date = datetime(2024, 2, 12)
+end_date = datetime(2024, 3, 18)
 
 # Set the min and max number of commits per day
 min_commits = 2
-max_commits = 8
+max_commits = 5
 
 fake_commits(start_date, end_date, min_commits, max_commits, skipping=True, max_skip_days=1)
